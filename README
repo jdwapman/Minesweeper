@@ -1,0 +1,39 @@
+1) Download all files to a folder on your hard drive.
+
+2) Navigate to the program directory in a terminal application.
+
+3) To compile the file, type "make" in the command line from within the program folder.
+
+4) Run the program by typing ./mine_sweeper.out [#Rows #Columns #Mines (Optional) Random Seed]
+    
+    Note: This program was designed to work on Linux and OSX. Results in Windows may vary.
+
+     ex: ./mine_sweeper.out 10 20 12
+     ex: ./mine_sweeper.out 20 20 14 5
+     
+5) Due to restrictions when creating this game, input formatting must exactly match the pattern # #
+
+Ex: 
+There are 10 mines left
+9 # # # # # # # # # #
+8 # # # # # # # # # #
+7 # # # # # # # # # #
+6 # # # # # # # # # #
+5 # # # # # # # # # #
+4 # # # # # # # # # #
+3 # # # # # # # # # #
+2 # # # # # # # # # #
+1 # # # # # # # # # #
+0 # # # # # # # # # #
+  0 1 2 3 4 5 6 7 8 9 
+Enter row a row between 0-9 and a column between 0-9: 4 5
+
+Any other input formatting will result in an error. This is a limit of the programming guidlines at the time of creation.
+
+When playing, the user has several options
+0: Reveal. This reveals a tile and displays a number representing the number of adjacent mines
+1: Question. This is purely a tool for the user to mark the locations of suspected tiles.
+2: Mark. If you suspect you have found a mine, mark its location.
+3: Cancels your action.
+
+To win the game, succesfully mark the location of every mine on the game board.
